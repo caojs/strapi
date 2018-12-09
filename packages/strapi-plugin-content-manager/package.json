@@ -29,7 +29,9 @@
     "strapi-helper-plugin": "3.0.0-alpha.16"
   },
   "dependencies": {
-    "pluralize": "^7.0.0"
+    "pluralize": "^7.0.0",
+    "quill-delta": "^4.1.0",
+    "react-quill": "^1.3.3"
   },
   "author": {
     "name": "Strapi team",

@@ -20,6 +20,7 @@ import {
 import Input from 'components/InputsIndex';
 import InputJSONWithErrors from 'components/InputJSONWithErrors';
 import WysiwygWithErrors from 'components/WysiwygWithErrors';
+import QuillEditorWithErrors from 'components/QuillEditorWithErrors';
 import styles from './styles.scss';
 
 const getInputType = (type = '') => {
@@ -136,7 +137,7 @@ class Edit extends React.PureComponent {
       <Input
         autoFocus={key === 0}
         customBootstrapClass={className}
-        customInputs={{ json: InputJSONWithErrors, wysiwyg: WysiwygWithErrors }}
+        customInputs={{ json: InputJSONWithErrors, wysiwyg: QuillEditorWithErrors }}
         didCheckErrors={this.props.didCheckErrors}
         disabled={!get(details, 'editable', true)}
         errors={this.getInputErrors(attr)}
